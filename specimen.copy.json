@@ -1,0 +1,106 @@
+{
+  "product": "Hello Kitty",
+  "headline": "Plan your day at Hello Kitty World",
+  "subhead": "Hello Kitty World helps families book tickets, reserve character meet-ups and map ride wait times before arriving at the park.",
+  "cta": "Book tickets",
+  "secondaryCta": "View park map",
+  "note": "Free changes up to 24 hours before.",
+  "nav": [
+    "Tickets",
+    "Meet-ups",
+    "Rides",
+    "Dining",
+    "Gift shop"
+  ],
+  "pageTitle": "Saturday visit plan",
+  "pageSummary": "Your party of 4 has 6 activities planned for Saturday, with an estimated 38 minutes of total ride waiting.",
+  "primaryAction": "Confirm plan",
+  "done": "Plan confirmed",
+  "statusLabel": "Draft",
+  "metrics": [
+    {
+      "label": "Party size",
+      "value": "4 guests"
+    },
+    {
+      "label": "Avg ride wait",
+      "value": "12 min"
+    },
+    {
+      "label": "Est. total",
+      "value": "$236"
+    }
+  ],
+  "table": {
+    "columns": [
+      "Activity",
+      "Location",
+      "Time",
+      "Status"
+    ],
+    "rows": [
+      {
+        "name": "Kitty meet-up",
+        "detail": "Rose Garden stage",
+        "value": "10:00 am",
+        "status": "ok"
+      },
+      {
+        "name": "Teacup Spin",
+        "detail": "Sanrio Square",
+        "value": "14 min wait",
+        "status": "ok"
+      },
+      {
+        "name": "My Melody tea party",
+        "detail": "Pink Pavilion cafe",
+        "value": "12:30 pm",
+        "status": "review"
+      },
+      {
+        "name": "Apple Pie Carousel",
+        "detail": "Kitty Lane",
+        "value": "9 min wait",
+        "status": "ok"
+      }
+    ]
+  },
+  "chat": {
+    "question": "When is the shortest wait for the Teacup Spin on Saturday?",
+    "tool": "get_ride_wait_forecast",
+    "toolArgs": "ride: teacup_spin, date: saturday, window: 09:00-18:00",
+    "answer": "The Teacup Spin is usually quietest at 9:30 am, with an average wait of 6 minutes. Waits climb to about 22 minutes between 1:00 and 3:00 pm.",
+    "followUp": "Want me to add a 9:30 am ride slot to your plan?"
+  },
+  "code": {
+    "comment": "# Reserve a character meet-up for 4 guests",
+    "command": "curl -X POST https://api.hellokittyworld.example/v1/meetups -H \"Authorization: Bearer $HKW_TOKEN\" -d '{\"character\":\"hello_kitty\",\"date\":\"2025-06-14\",\"time\":\"10:00\",\"guests\":4}'"
+  },
+  "sms": [
+    {
+      "from": "business",
+      "text": "Hi Dana, your Hello Kitty meet-up is confirmed for Saturday at 10:00 am at the Rose Garden stage. Reply C to cancel."
+    },
+    {
+      "from": "customer",
+      "text": "Thanks! Can we bring a stroller into the line?"
+    },
+    {
+      "from": "business",
+      "text": "Yes, strollers are welcome. There is free stroller parking beside the stage entrance."
+    }
+  ],
+  "card": {
+    "title": "Meet-up confirmed",
+    "body": "Sat 10:00 am, Rose Garden stage",
+    "metric": "4 guests"
+  },
+  "decision": {
+    "label": "Q4 plan",
+    "title": "Approve the Q4 plan?",
+    "body": "Three projects need a decision by Friday.",
+    "approve": "Approve",
+    "decline": "Not now",
+    "command": "hello-kitty approve q4 --notify"
+  }
+}

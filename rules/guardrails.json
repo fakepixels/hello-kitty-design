@@ -1,0 +1,336 @@
+{
+  "version": 1,
+  "system": "hello-kitty",
+  "product": "Hello Kitty",
+  "texture": "minimal",
+  "surfaces": [
+    "web-app",
+    "code",
+    "chat",
+    "marketing",
+    "messaging",
+    "mcp-apps"
+  ],
+  "colors": {
+    "roles": [
+      "background",
+      "foreground",
+      "card",
+      "card-foreground",
+      "popover",
+      "popover-foreground",
+      "primary",
+      "primary-foreground",
+      "secondary",
+      "secondary-foreground",
+      "muted",
+      "muted-foreground",
+      "accent",
+      "accent-foreground",
+      "destructive",
+      "destructive-foreground",
+      "success",
+      "success-foreground",
+      "warning",
+      "warning-foreground",
+      "border",
+      "input",
+      "ring",
+      "overlay",
+      "chart-1",
+      "chart-2",
+      "chart-3",
+      "chart-4",
+      "chart-5",
+      "sidebar",
+      "sidebar-foreground",
+      "sidebar-primary",
+      "sidebar-primary-foreground",
+      "sidebar-accent",
+      "sidebar-accent-foreground",
+      "sidebar-border",
+      "sidebar-ring",
+      "transparent",
+      "current",
+      "inherit"
+    ]
+  },
+  "fonts": {
+    "families": [
+      "sans",
+      "mono"
+    ],
+    "cssFamilies": [
+      "Rubik Variable",
+      "Fira Code Variable"
+    ]
+  },
+  "weights": {
+    "normal": 400,
+    "medium": 500,
+    "semibold": 600
+  },
+  "text": {
+    "steps": [
+      "xs",
+      "sm",
+      "base",
+      "lg",
+      "xl",
+      "2xl",
+      "3xl",
+      "4xl",
+      "5xl",
+      "6xl"
+    ],
+    "productMax": "3xl"
+  },
+  "spacing": {
+    "steps": [
+      0,
+      0.5,
+      1,
+      1.5,
+      2,
+      2.5,
+      3,
+      4,
+      5,
+      6,
+      8,
+      10,
+      12,
+      16,
+      20,
+      24,
+      32,
+      40,
+      48,
+      64
+    ]
+  },
+  "radius": {
+    "steps": [
+      "none",
+      "sm",
+      "md",
+      "lg",
+      "xl",
+      "full"
+    ]
+  },
+  "shadow": {
+    "steps": [
+      "none",
+      "xs",
+      "sm",
+      "md",
+      "lg",
+      "raised"
+    ]
+  },
+  "motion": {
+    "durations": [
+      0,
+      150,
+      220,
+      320,
+      1000
+    ],
+    "easings": [
+      "linear",
+      "out",
+      "in-out"
+    ],
+    "maxDuration": 400,
+    "enterScale": 0.95
+  },
+  "voice": {
+    "uiCase": "sentence",
+    "emoji": "never"
+  },
+  "rules": {
+    "no-raw-color": "error",
+    "no-palette-color": "error",
+    "no-arbitrary-value": "error",
+    "type-scale": "error",
+    "font-weight": "error",
+    "font-family": "error",
+    "spacing-scale": "error",
+    "radius-scale": "error",
+    "shadow-scale": "error",
+    "motion-duration": "error",
+    "motion-easing": "error",
+    "no-scale-zero": "error",
+    "no-gradient-text": "warn",
+    "ui-case": "warn",
+    "no-emoji": "warn",
+    "no-token-override": "error",
+    "glass-on-content": "warn",
+    "display-size": "warn"
+  },
+  "ignore": [
+    "**/node_modules/**",
+    "**/.next/**",
+    "**/dist/**",
+    "**/auto-design.css",
+    "**/*.d.ts"
+  ],
+  "lockedNamespaces": [
+    "--color-*",
+    "--font-*",
+    "--text-*",
+    "--font-weight-*",
+    "--tracking-*",
+    "--leading-*",
+    "--radius-*",
+    "--shadow-*",
+    "--inset-shadow-*",
+    "--drop-shadow-*",
+    "--text-shadow-*",
+    "--blur-*",
+    "--ease-*",
+    "--animate-*"
+  ],
+  "theme": {
+    "product": "Hello Kitty",
+    "texture": "minimal",
+    "radius": 8,
+    "defaultMode": "light",
+    "colors": {
+      "light": {
+        "background": "#ffffff",
+        "foreground": "#0a0a0a",
+        "card": "#ffffff",
+        "card-foreground": "#0a0a0a",
+        "popover": "#ffffff",
+        "popover-foreground": "#0a0a0a",
+        "primary": "#ff5268",
+        "primary-foreground": "#0a0a0a",
+        "secondary": "#f4f4f4",
+        "secondary-foreground": "#171717",
+        "muted": "#f4f4f4",
+        "muted-foreground": "#6a6a6a",
+        "accent": "#f4f4f4",
+        "accent-foreground": "#171717",
+        "destructive": "#d6111c",
+        "destructive-foreground": "#fafafa",
+        "success": "#008240",
+        "success-foreground": "#fafafa",
+        "warning": "#db9400",
+        "warning-foreground": "#0a0a0a",
+        "border": "#e5e5e5",
+        "input": "#d4d4d4",
+        "ring": "#ff5268",
+        "overlay": "#000000",
+        "chart-1": "#ff5268",
+        "chart-2": "#dd9054",
+        "chart-3": "#05957f",
+        "chart-4": "#d2a3e2",
+        "chart-5": "#a1a1a1",
+        "sidebar": "#fafafa",
+        "sidebar-foreground": "#0a0a0a",
+        "sidebar-primary": "#ff5268",
+        "sidebar-primary-foreground": "#0a0a0a",
+        "sidebar-accent": "#f4f4f4",
+        "sidebar-accent-foreground": "#171717",
+        "sidebar-border": "#e5e5e5",
+        "sidebar-ring": "#ff5268"
+      },
+      "dark": {
+        "background": "#0a0a0a",
+        "foreground": "#fafafa",
+        "card": "#171717",
+        "card-foreground": "#fafafa",
+        "popover": "#171717",
+        "popover-foreground": "#fafafa",
+        "primary": "#ff5268",
+        "primary-foreground": "#0a0a0a",
+        "secondary": "#262626",
+        "secondary-foreground": "#fafafa",
+        "muted": "#262626",
+        "muted-foreground": "#a1a1a1",
+        "accent": "#262626",
+        "accent-foreground": "#fafafa",
+        "destructive": "#ff7266",
+        "destructive-foreground": "#0a0a0a",
+        "success": "#52be76",
+        "success-foreground": "#0a0a0a",
+        "warning": "#db9400",
+        "warning-foreground": "#0a0a0a",
+        "border": "#262626",
+        "input": "#404040",
+        "ring": "#ff5268",
+        "overlay": "#000000",
+        "chart-1": "#ff5268",
+        "chart-2": "#e79a5e",
+        "chart-3": "#36ae98",
+        "chart-4": "#d8aae8",
+        "chart-5": "#737373",
+        "sidebar": "#171717",
+        "sidebar-foreground": "#fafafa",
+        "sidebar-primary": "#ff5268",
+        "sidebar-primary-foreground": "#0a0a0a",
+        "sidebar-accent": "#262626",
+        "sidebar-accent-foreground": "#fafafa",
+        "sidebar-border": "#262626",
+        "sidebar-ring": "#ff5268"
+      }
+    },
+    "brand": {
+      "50": "#fff4f4",
+      "100": "#ffe4e4",
+      "200": "#ffcaca",
+      "300": "#ffa7aa",
+      "400": "#ff5268",
+      "500": "#f72d54",
+      "600": "#d60040",
+      "700": "#b20034",
+      "800": "#930029",
+      "900": "#77001f",
+      "950": "#4f0012"
+    },
+    "text": {
+      "xs": 12,
+      "sm": 13,
+      "base": 14,
+      "lg": 17,
+      "xl": 20,
+      "2xl": 24,
+      "3xl": 30,
+      "4xl": 34,
+      "5xl": 42,
+      "6xl": 50
+    },
+    "fonts": {
+      "sans": {
+        "family": "Rubik Variable",
+        "fallback": [
+          "Rubik",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif"
+        ],
+        "weights": [
+          400,
+          500,
+          600
+        ]
+      },
+      "mono": {
+        "family": "Fira Code Variable",
+        "fallback": [
+          "Fira Code",
+          "ui-monospace",
+          "SFMono-Regular",
+          "Menlo",
+          "monospace"
+        ],
+        "weights": [
+          400,
+          500
+        ]
+      }
+    }
+  }
+}
